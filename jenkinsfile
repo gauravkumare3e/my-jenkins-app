@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 3000:3000 --name my-jenkins-app my-jenkins-app'
+                bat 'docker run -d -p 3000:3000 --name my-jenkins-app my-jenkins-app'
             }
         }
     }
